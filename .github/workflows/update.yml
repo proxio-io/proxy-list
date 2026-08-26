@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: "*/20 * * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['update.py', '.github/**']
 
 permissions:
   contents: write
