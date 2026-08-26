@@ -1,0 +1,35 @@
+name: update proxy list
+
+on:
+  schedule:
+    - cron: "*/20 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch list from proxio.io
+        run: python update.py
+      - name: Commit if changed
+        run: |
+          git config user.name "proxio-bot"
+          git config user.email "bot@proxio.io"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "no changes"; exit 0
+          fi
+          git commit -m "update $(date -u +'%Y-%m-%d %H:%M') UTC"
+          git push
