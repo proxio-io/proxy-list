@@ -4,14 +4,14 @@ Live, re-checked public proxies from **[proxio.io](https://proxio.io)**, mirrore
 Every entry answered a real protocol check within the last 7 days; dead proxies drop off automatically.
 
 <!-- stats:start -->
-Last update: **2026-09-14 12:55 UTC**
+Last update: **2026-09-14 13:00 UTC**
 
 | file | live proxies |
 |---|---:|
-| [`http.txt`](http.txt) | 8,794 |
-| [`https.txt`](https.txt) | 9,841 |
-| [`socks4.txt`](socks4.txt) | 1,953 |
-| [`socks5.txt`](socks5.txt) | 6,228 |
+| [`http.txt`](http.txt) | 8,827 |
+| [`https.txt`](https.txt) | 9,816 |
+| [`socks4.txt`](socks4.txt) | 1,948 |
+| [`socks5.txt`](socks5.txt) | 7,221 |
 | [`all.txt`](all.txt) / [`all.json`](all.json) | 20,000 |
 <!-- stats:end -->
 
