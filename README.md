@@ -8,11 +8,11 @@ Last update: **2026-10-09 06:40 UTC**
 
 | file | live proxies |
 |---|---:|
-| [`http.txt`](http.txt) | 5,164 |
-| [`https.txt`](https.txt) | 6,950 |
-| [`socks4.txt`](socks4.txt) | 1,640 |
-| [`socks5.txt`](socks5.txt) | 2,099 |
-| [`all.txt`](all.txt) / [`all.json`](all.json) | 15,935 |
+| [`http.txt`](http.txt) | 5,299 |
+| [`https.txt`](https.txt) | 7,150 |
+| [`socks4.txt`](socks4.txt) | 1,627 |
+| [`socks5.txt`](socks5.txt) | 2,131 |
+| [`all.txt`](all.txt) / [`all.json`](all.json) | 15,761 |
 <!-- stats:end -->
 
 ## Files
